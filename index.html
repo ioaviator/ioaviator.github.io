@@ -12,14 +12,16 @@
 <body>
 
 <header>
-    <img src="images/jpg/photo.png" alt="Display Photo" class="profile-photo">
+    <img src="images/profile/photo.jpg" alt="Display Photo" class="profile-photo">
     <h1>Ifeanyichukwu Onyechere</h1>
     <p class="typing-text"><span id="typing"></span></p>
 
     <div class="header-buttons">
         <!-- <a class="btn" href="https://github.com/ioaviator" target="_blank" rel="noopener noreferrer">GitHub</a> -->
         <a class="btn" href="https://linkedin.com/in/ioaviator" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a class="btn" href="https://ioaviator.github.io/images/cv/Ifeanyi_Onyechere_resume_Engr_.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a class="btn" href="https://ioaviator.github.io/images/cv/Ifeanyi_Onyechere_resume_Engr_.pdf" target="_blank" rel="noopener noreferrer">CV</a>
+        <a class="btn" href="https://github.com/ioaviator" target="_blank" rel="noopener noreferrer">GitHub</a>
+
     </div>
 </header>
 
@@ -27,19 +29,18 @@
 
     <!-- About Me -->
     <section class="reveal">
-        <h2>About Me</h2>
+        <h2> About </h2>
         <div class="card">
             <p>
-                I am a Data and Analytics Engineer who turns raw data into reliable, actionable insights.
+                I am a Data and Analytics Engineer, preparing and transforming raw data into reliable, actionable insights.
                 I build data pipelines that support informed decision-making and business growth.
                 <br><br>
                 With experience across the data lifecycle, from ingestion and transformation to deployment
-                and monitoring. I deliver solutions that are efficient, trustworthy, and future-ready.
+                and monitoring, I deliver solutions that are efficient, reliable and future-ready.
                 <br><br>
-                I am driven by the opportunity to create impact through data and empower organizations
-                to thrive using data.
+                I am driven by curiousity, and opportunity to create impact through data, and empower organizations to thrive using data.
             </p>
-							<br> <br>
+				    <br> <br>
             <div>
                 <span class="tag">Python</span>
                 <span class="tag">SQL</span>
@@ -49,10 +50,16 @@
                 <span class="tag">Apache Spark</span>
                 <span class="tag">Docker</span>
                 <span class="tag">CI/CD</span>
+                <span class="tag">Observability</span>
+                <span class="tag">Monitoring</span>
                 <span class="tag">dbt</span>
                 <span class="tag">Snowflake</span>
+                <span class="tag">Databricks</span>
                 <span class="tag">Apache Airflow</span>
                 <span class="tag">Terraform</span>
+           
+
+                
             </div>
         </div>
     </section>
@@ -62,60 +69,117 @@
         <h2>Projects</h2>
         <div class="grid">
 
-            <div class="card">
-                <h3>Real-Time Stock Market Data Pipeline</h3>
-                <p>
-                    Production-style streaming pipeline:
-                    API → Kafka → Spark → PostgreSQL → Power BI.
-                    Fully containerized using Docker with monitoring.
-                </p>
-                <img src="images/projects/photo.png"
-                     alt="Stock Market Data Pipeline Architecture"
-                     class="project-image" loading="lazy">
+             <div class="card">
+                <div class="card-content">
+                    <h3>CivicPulse Urban City Service Requests</h3>
+                    
+                    <p>
+                   CivicPulse is a public sector data engineering and analytics initiative designed to transform
+                   New York City's 311 service request data into actionable operational intelligence. 
+                   <br> <br>
+                   The goal is to identify the most common service requests across neighborhoods, uncover emerging 
+                   community needs, and enable city agencies to make faster, data-driven decisions.
+                    </p>
+                     <!--  Tech Stack -->
+                    <div class="tech-stack">
+                        <span class="tag">Apache Airflow</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">Power BI</span>
+                        
+                    </div>
+                    <img src="images/projects/urban_city_data_pipeline.gif"
+                        alt="urban city data architecture"
+                        class="project-image" loading="lazy">
+                </div>
                 <a class="btn"
-                   href="https://github.com/ioaviator"
+                   href="https://github.com/ioaviator/urban-city-service-request"
                    target="_blank">View Project</a>
             </div>
 
             <div class="card">
-                <h3>Rushmore Pizzeria Database System</h3>
-                <p>
-                    Cloud-ready PostgreSQL database schema with normalized design
-                    and synthetic data generation using Python.
-                </p>
-                <img src="images/projects/photo.png"
-                     alt="Rushmore Pizzeria Database Schema"
-                     class="project-image" loading="lazy">
+                <div class="card-content">
+                    <h4> VoxStocks Real Time Stock Analysis and Monitoring </h4>
+                    
+                    <p>
+                    VoxStocks is a real-time stock analysis and monitoring pipeline built to process 
+                    live trade data as it flows through the system. The architecture ingests trade events through an API,
+                    processes and routes them with Kafka and Spark, and stores data in PostgreSQL. 
+                    <br> <br>
+                    The pipeline is also continuously monitored with Prometheus and Grafana to detect unexpected shutdowns 
+                    and ensure trade flow remains stable, reliable, and observable.
+                    </p>
+                        <!--  Tech Stack -->
+                    <div class="tech-stack">
+                        <span class="tag">Python</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">PySpark</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        
+                    </div>
+                    <img src="images/projects/VoxStocks_data_pipeline.gif"
+                        alt="VoxStocks Market Data Pipeline Architecture"
+                        class="project-image" loading="lazy">
+                </div>
                 <a class="btn"
-                   href="https://github.com/ioaviator"
+                        href="https://github.com/ioaviator/VoxStocks-Real-Time-Stock-Analysis-And-Monitoring"
+                        target="_blank">
+                    View Project
+                </a>
+            </div>
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>TripLens Countries Explorer</h3>
+                    
+                    <p>
+                    Triplens Global is a agency using analytics to turns public country data into travel-ready insights for 
+                    tourists and travelers exploring new destinations.
+                    <br> <br>
+                    The goal is to help people quickly understand the essentials about a country before they make their move. 
+                    Key facts like region, language, currency, time zone, neighboring countries, and other helpful background 
+                    details that can influence planning and decision-making.
+                    </p>
+                        <!--  Tech Stack -->
+                    <div class="tech-stack">
+                        <span class="tag">Python</span>
+                        <span class="tag">Snowflake</span>
+                        <span class="tag">dbt</span>
+                        <span class="tag"> Apache Airflow </span>
+                        <span class="tag"> Docker </span>
+                    </div>
+                    <img src="images/projects/triplens_data_pipeline.png"
+                        alt="TripLens Data Architecture"
+                        class="project-image" loading="lazy">
+                </div>
+                <a class="btn"
+                   href="https://github.com/ioaviator/TripLens-Countries-Explorer"
                    target="_blank">View Project</a>
             </div>
 
             <div class="card">
-                <h3>Urban Service Analytics</h3>
-                <p>
-                    End-to-end data engineering pipeline for NYC 311 complaint data
-                    using Python, Airflow, Terraform, PostgreSQL, and Power BI.
-                </p>
-                <img src="images/projects/photo.png"
-                     alt="Urban Service Analytics Pipeline"
-                     class="project-image" loading="lazy">
+                <div class="card-content">
+                    <h3>Frost-Flow Business Intelligence Platform</h3>
+                    
+                    <p>
+                        Cloud-ready PostgreSQL database schema with normalized design
+                        and synthetic data generation using Python.
+                    </p>
+                      <!--  Tech Stack -->
+                    <div class="tech-stack">
+                        <span class="tag">Google Cloud</span>
+                        <span class="tag">Snowflake</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                    <img src="images/projects/frost_flow_data_pipeline.gif"
+                        alt="FrostFlow Data Architecture"
+                        class="project-image" loading="lazy">
+                </div>
                 <a class="btn"
-                   href="https://github.com/ioaviator"
-                   target="_blank">View Project</a>
-            </div>
-
-            <div class="card">
-                <h3>Urban Service Analytics</h3>
-                <p>
-                    End-to-end data engineering pipeline for NYC 311 complaint data
-                    using Python, Airflow, Terraform, PostgreSQL, and Power BI.
-                </p>
-                <img src="images/projects/photo.png"
-                     alt="Urban Service Analytics Pipeline"
-                     class="project-image" loading="lazy">
-                <a class="btn"
-                   href="https://github.com/ioaviator"
+                   href=""
                    target="_blank">View Project</a>
             </div>
 
