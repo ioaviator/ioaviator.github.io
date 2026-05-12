@@ -32,13 +32,20 @@
         <h2> About </h2>
         <div class="card">
             <p>
-                I am a Data and Analytics Engineer, preparing and transforming raw data into reliable, actionable insights.
-                I build data pipelines that support informed decision-making and business growth.
-                <br><br>
+                <!-- I am a Data and Analytics Engineer, preparing and transforming raw data into reliable, actionable insights.
+                I build data pipelines that support informed decision-making and business growth. -->
+
+                I am a Data and Analytics Engineer with experience helping organizations make sense of their data, 
+                by transforming scattered, disorganised data into reliable systems for reporting and decision-making.  
+                <br> <br>
                 With experience across the data lifecycle, from ingestion and transformation to deployment
                 and monitoring, I deliver solutions that are efficient, reliable and future-ready.
-                <br><br>
-                I am driven by curiousity, and opportunity to create impact through data, and empower organizations to thrive using data.
+                <br> <br>
+                Alongside my technical work, I also teach/mentor aspiring data professionals, which has strengthened my ability to 
+                communicate complex ideas clearly and collaborate effectively across technical and non-technical teams.
+                <br> <br>
+                I enjoy building and debugging data pipelines, teaching others, and solving data-related problems.
+                I am driven by curiosity, the opportunity to create impact through data, and a desire to empower organizations to thrive.       
             </p>
 				    <br> <br>
             <div>
@@ -46,8 +53,9 @@
                 <span class="tag">SQL</span>
                 <span class="tag">Linux</span>
                 <span class="tag">Azure</span>
+                <span class="tag">AWS</span>
                 <span class="tag">Google Cloud</span>
-                <span class="tag">Apache Spark</span>
+                <span class="tag">PySpark</span>
                 <span class="tag">Docker</span>
                 <span class="tag">CI/CD</span>
                 <span class="tag">Observability</span>
@@ -68,6 +76,68 @@
     <section class="reveal">
         <h2>Projects</h2>
         <div class="grid">
+
+            <div class="card">
+                <div class="card-content">
+                    <h3>Serverless E-Commerce Analytics Engine </h3>
+                    
+                    <p>
+                  A cloud-native data engineering project designed to process and analyze large-scale e-commerce 
+                  event data in real time using AWS serverless technologies.
+                    <br> <br>
+                  The goal is to transform raw customer interaction and transaction logs into optimized analytical datasets, 
+                  enabling faster business insights, scalable data processing, and cost-efficient infrastructure management.
+                    </p>
+                     <!--  Tech Stack -->
+                    <div class="tech-stack">
+                        <span class="tag">AWS</span>
+                        <span class="tag">PySpark</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Terraform</span>
+                        
+                    </div>
+                    <img src="images/projects/air_sensor_stream_pipeline.gif"
+                        alt="air sensor architecture"
+                        class="project-image" loading="lazy">
+                </div>
+                <!-- <a class="btn"
+                   href="https://github.com/ioaviator/urban-city-service-request"
+                   target="_blank">View Project</a> -->
+            </div>
+
+            <!-- =========================================================================== -->
+
+            
+             <div class="card">
+                <div class="card-content">
+                    <h3> Real-Time Financial Fraud Detection Platform </h3>
+                    
+                    <p>
+                        FraudShield is a real-time financial fraud detection platform built on Azure and Databricks to 
+                        process and analyze financial transaction data. 
+                        <br> <br>
+                        The platform ingests financial events through 
+                        Azure Event Hubs and applies a Medallion Architecture (Bronze, Silver, and Gold layers) to transform raw transaction 
+                        streams into analytics-ready fraud intelligence.
+                    </p>
+                     <!--  Tech Stack -->
+                    <div class="tech-stack">
+                        <span class="tag">Python</span>
+                        <span class="tag">Azure</span>     
+                        <span class="tag">Databricks</span>                        
+                    </div>
+                    <img src="images/projects/databricks_event_hubs.gif"
+                        alt="urban city data architecture"
+                        class="project-image" loading="lazy">
+                </div>
+                <!-- <a class="btn"
+                   href="https://github.com/ioaviator/urban-city-service-request"
+                   target="_blank">View Project</a> -->
+            </div>
+
+
+
+            <!-- ================================================================================== -->
 
              <div class="card">
                 <div class="card-content">
@@ -97,14 +167,17 @@
                    target="_blank">View Project</a>
             </div>
 
+
+            <!-- ========================================================================================= -->
+
             <div class="card">
                 <div class="card-content">
                     <h3> VoxStocks Real Time Stock Analysis and Monitoring </h3>
                     
                     <p>
                     VoxStocks is a real-time stock analysis and monitoring pipeline built to process 
-                    live trade data as it flows through the system. The architecture ingests trade events through an API,
-                    processes and routes them with Kafka and Spark, and stores data in PostgreSQL. 
+                    live trade data as it flows through the system. Data is ingested from data sources, routed to Kafka,
+                    processed using Spark, and stored inside PostgreSQL database. 
                     <br> <br>
                     The pipeline is also continuously monitored with Prometheus and Grafana to detect unexpected shutdowns 
                     and ensure trade flow remains stable, reliable, and observable.
@@ -129,6 +202,8 @@
                     View Project
                 </a>
             </div>
+
+                <!-- ==================================================================== -->
 
             <div class="card">
                 <div class="card-content">
@@ -159,7 +234,9 @@
                    target="_blank">View Project</a>
             </div>
 
-            <div class="card">
+                <!-- ============================================================== -->
+            
+                <div class="card">
                 <div class="card-content">
                     <h3>Frost-Flow Business Intelligence Platform</h3>
                     
@@ -184,8 +261,8 @@
                         alt="FrostFlow Data Architecture"
                         class="project-image" loading="lazy">
                 </div>
-                <a class="btn"
-                   target="_blank">View Project</a>
+                <!-- <a class="btn"
+                   target="_blank">View Project</a> -->
             </div>
 
         </div>
