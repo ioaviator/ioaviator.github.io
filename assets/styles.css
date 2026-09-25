@@ -135,6 +135,12 @@ h2 {
     text-align: justify;
 }
 
+/* About */
+.about {
+    margin-bottom: 10px;
+}
+
+
 /* Tech Stack */
 .tech-stack {
     display: flex;
@@ -169,19 +175,48 @@ h2 {
     box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
 }
 
+
+/* Portfolio Navigation */
+.portfolio-nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.portfolio-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 800;
+}
+
+.portfolio-links a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.5);
+    background: rgba(255,255,255,0.05);
+}
+
+/* Hover box effect */
+.portfolio-links a:hover {
+    border: 1px solid rgba(255,255,255,0.35);
+    background: #38bdf8;
+    color: #001018;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
 /* Project Images */
 .project-image {
     width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 200px;
+    height: 250px;
     object-fit: contain;
+    border-radius: 12px;
     display: block;
-    margin-top: auto;
-    margin-bottom: 15px;
-    align-self: center;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     transition: transform 0.3s ease;
 }
 
@@ -246,6 +281,53 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* Tablet */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* portfolio links */
+@media (max-width: 600px) {
+    .portfolio-links {
+        flex-direction: row;
+        gap: 6px;
+        width: 100%;
+        justify-content: center;
+        font-size: 0.95rem; 
+    }
+
+    .portfolio-links a {
+        padding: 8px 10px;
+        border-radius: 8px;
+        white-space: nowrap;
+    }
+
+    .portfolio-links span {
+        display: inline;
+    }
+}
+
+@media (max-width: 380px) {
+    .portfolio-links {
+        gap: 3px;
+        font-size: 0.85rem;
+    }
+
+    .portfolio-links a {
+        padding: 6px 7px;
+    }
+}
+
 
 @media (max-width: 768px) {
     header h1 {
